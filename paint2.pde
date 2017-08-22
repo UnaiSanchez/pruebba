@@ -15,10 +15,10 @@ void draw() {
   if (bajar==true) {
 
     if (mouseY>=170+m/2 && mouseY<480-m/2) {
-      stroke(m);
-      fill(c, 254);
-      line(mouseX, mouseY, mouseX, mouseY);
       noStroke();
+      fill(c, 254);
+      ellipse(mouseX, mouseY, m, m);
+      
     }
   }
   if (t==true) {
