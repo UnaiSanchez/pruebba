@@ -9,6 +9,13 @@ void setup() {
   background(255);
 }
 void draw() {
+  println(m);
+  if(m >=34){
+  m=33;
+  }
+  if(m <=0){
+  m=1;
+  }
 
   stroke(0);
   line(-10, 170, 520, 170);
@@ -19,6 +26,8 @@ void draw() {
       strokeWeight(m);
       line(mouseX, mouseY, mouseX, mouseY);
       noStroke();
+      strokeWeight(1);
+      
     }
   }
   if (t==true) {
@@ -106,13 +115,13 @@ void keyPressed() {
       bajar=true;
     }
   }
-  if (key=='b') {
+  if (key=='g') {
     m++;
   }
-  if (key=='s') {
+  if (key=='p') {
     m--;
   }
-  if (key=='d') {
+  if (key=='l') {
 
     t=true;
   }
